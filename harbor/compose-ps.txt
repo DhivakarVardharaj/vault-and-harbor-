@@ -1,0 +1,10 @@
+NAME                IMAGE                                 COMMAND                  SERVICE       CREATED          STATUS                    PORTS
+harbor-core         goharbor/harbor-core:v2.14.6          "/harbor/entrypoint.…"   core          56 minutes ago   Up 18 minutes (healthy)   
+harbor-db           goharbor/harbor-db:v2.14.6            "/docker-entrypoint.…"   postgresql    56 minutes ago   Up 18 minutes (healthy)   
+harbor-jobservice   goharbor/harbor-jobservice:v2.14.6    "/harbor/entrypoint.…"   jobservice    56 minutes ago   Up 18 minutes (healthy)   
+harbor-log          goharbor/harbor-log:v2.14.6           "/bin/sh -c /usr/loc…"   log           56 minutes ago   Up 20 minutes (healthy)   127.0.0.1:1514->10514/tcp
+harbor-portal       goharbor/harbor-portal:v2.14.6        "nginx -g 'daemon of…"   portal        56 minutes ago   Up 18 minutes (healthy)   
+nginx               goharbor/nginx-photon:v2.14.6         "nginx -g 'daemon of…"   proxy         56 minutes ago   Up 18 minutes (healthy)   0.0.0.0:80->8080/tcp, [::]:80->8080/tcp, 0.0.0.0:443->8443/tcp, [::]:443->8443/tcp
+redis               goharbor/redis-photon:v2.14.6         "redis-server /etc/r…"   redis         56 minutes ago   Up 18 minutes (healthy)   
+registry            goharbor/registry-photon:v2.14.6      "/home/harbor/entryp…"   registry      56 minutes ago   Up 18 minutes (healthy)   
+registryctl         goharbor/harbor-registryctl:v2.14.6   "/home/harbor/start.…"   registryctl   56 minutes ago   Up 18 minutes (healthy)   
