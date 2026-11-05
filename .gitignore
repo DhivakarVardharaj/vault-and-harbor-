@@ -1,0 +1,15 @@
+# Vault secrets
+vault-init.txt
+*.token
+*.key
+*.pem
+
+# Harbor secrets and big files
+*.tar.gz
+harbor/common/
+common/
+config.json
+.docker/
+
+# Raw data folders
+data/
